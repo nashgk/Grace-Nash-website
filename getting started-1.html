@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Header of the website -->
+   <header>
+    <div class="navbar">
+        <a href="index.html">About me</a>
+        <a href="getting started.html">Getting started</a>
+        <a href="foods.html">Foods!</a>
+        <a href="materialize.html">Materialize</a>
+    </div>
+    <header>
+        <p><b>Empowering you with strength and grace</b></p>
+    </header>
+    <header>
+        <img src="images/Untitled_design-removebg-preview.png" alt="personaltrainglogo">
+    </header>
+    <main>
+        <section>
+            <h1>Why is taking 10,000 steps a day importatnt:</h1>
+        </main>
+            <hr>
+        <ul>
+            <ul>
+                <li><u>Supports Heart Health</u> </li>
+                  <ul>
+                <li>Regular walking lowers blood pressure</u>
+                <li>Regular walking lowers bad cholesterol, and raises good cholesterol</li>
+                <li> All of this contributes to better cardiovascular health.</li>
+                <li>Lastly, it lowers the risk of stroke and heart disease</li>
+                        </ul>
+                        <blockquote>Taking plenty of steps a day is the first thing I recommend...</blockquote>
+                        <h2>Help us find the best way to incorperate new healthy living stratiges into you'r everyday life</h2>
+                        <script>
+                      function getOption() {
+                        var obj = document.getElementById("mySelect");
+                        document.getElementById("demo").innerHTML =
+                        obj.options[obj.selectedIndex].text;
+                      }
+                      </script>
+                         
+                        <form>
+                          Select the option that sounds like the best addition to your life:
+                          <select id="mySelect">
+                            <option>Walking to close by things</option>
+                            <option>Drinking more water</option>
+                            <option> Mindful Eating</option>
+                            <option>Setting personal goals</option>
+                          </select>
+                          <br><br>
+                          <input type="button" onclick="getOption()" value="Submit!">
+                          </form>
+                          <p id="demo"></p>  
+                
+                
+                 <h3>What is most important to you when trying to improve your quality of life</h3>
+                             <form id="form1">
+                                <input type="radio" name="youroption" value="Thank you!" id="option1" /> <label for="option1">Hydration</label><br>
+                                <input type="radio" name="youroption" value="Your Opinion Matters!" id="option2"/> <label for="option2">Energy</label><br>
+                                <input type="radio" name="youroption" value="Thank you valued customer!" id="option3"/> <label for="option3">Plan</label><br>
+                                <input type="radio" name="youroption" value="Got it, thank you!"/> <label for="option4">Qulity of food</label><br>
+                                <input type="submit" value="Submit">
+                                </form>
+                                <p id="answer"></p>
+                                             
+                                <script>
+                               
+                                // the following lines grab the input value from the form and store it in a variable
+                                    document.getElementById("form1").onsubmit=function() {
+                                   option = document.querySelector('input[name = "youroption"]:checked').value;
+                               
+                                   document.getElementById("answer").innerHTML = option;
+                               
+                                 return false; // required to not refresh the page
+                                }// end the submit function
+                                </script>
+                
+                
+                <input id="userInput"> <br><br>
+                <button onclick="myFunction()">Submit</button>
+                <p id="message"></p>
+                    <script>function myFunction() {
+                        let userInput = document.querySelector ("#userInput");
+                        let message = document.querySelector ("#message");
+                        message.innerHTML = "Thank your for entering our monthly drawing " + userInput.value;
+                    }
+                                </script>
+                    </main>
+                    <footer>
+                        <p><b>Empowering you with strength and grace</b></p>
+                    </footer>
+                </body>
+                </html>

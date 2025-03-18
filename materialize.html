@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Wellness With Grace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      :root {
+            --light-background: #fff0f5;
+            --light-pink: #ffc0cb;
+            --medium-pink: #d8bfd8;
+            --pink-accent: #ff69b4;
+            --text-color: #2d2d2d;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--light-background);
+            color: var(--text-color);
+            padding: 0;
+            margin: 0;
+        }
+        .navbar {
+            background-color: var(--pink-accent);
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .navbar a:hover {
+            background-color: var(--medium-pink);
+            border-radius: 4px;
+        }
+        .header-bg {
+            background-color: var(--light-pink);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section-bg {
+            background-color: var(--medium-pink);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper header-bg">
+            <ul class="center">
+                <li><a href="index.html">About me</a></li>
+                <li><a href="getting started.html">Getting started</a></li>
+                <li><a href="foods.html">Foods!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="container header-bg">
+        <h1>Invest In Yourself!</h1>
+        <img src="images/Untitled_design-removebg-preview.png" alt="personaltrainglogo">
+        <p><b>Stay Healthy!</b></p>
+    </div>
+
+    <!-- Feel Your Best Look Your Best section -->
+    <div class="container section-bg">
+        <h2>Feel Your Best Look Your Best</h2>
+        <p>I am deicated to helping every client reach their personal phically and mental health goals.</p>
+        <p>How you treat you'r body not only effects how you look but also how you feel.</p>
+        <p>Through engaging and entertaining content, I provide valuable insights, practical tips, and motivational guidance to help individuals embrace a healthier version of themselves. Whether it’s workout routines, nutrition advice, or simple wellness habits, my goal is to inspire and support others in their journey toward a balanced and fulfilling life.</p>
+    </div>
+
+    <!-- My Services Section -->
+    <div class="container">
+        <h2>My Services</h2>
+        <ul>
+            <li>-Costomized workouts for every day</li>
+            <li>-Costomized meal plans</li>
+            <li>-Bi weekly check-ins</li>
+            <li>-247 phone support</li>
+        </ul>
+    </div>
+    <!-- Video Section -->
+    <div class="container section-bg">
+    <h2 class="center-align">"Pain is just weekness leaving the body"</h2>
+    <video class="responsive-video" controls>
+        <source src="videos/92F58FE5-D010-4803-BA68-56E84582A56F.mov" type="video/mp4">
+      </video>
+
+    <!-- Contact Section -->
+    <div class="container section-bg">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <div class="col s12 m6">
+                <form>
+                    <div class="input-field">
+                        <input id="name" type="text">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="col s12 m6">
+                <p><i class="material-icons">phone</i> (203)539-9003</p>
+                <p><i class="material-icons">email</i> gracenashfit@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- Image Gallery Section -->
+    <div class="container">
+        <h2 class="center-align">My body transformation</h2>
+        <div class="gallery">
+            <img src="images/IMG_0022.jpg"alt="Before I educated myself on healthy living">
+            <img src="images/IMG_0025.jpg" alt="shoulder mucle">
+            <img src="images/IMG_0024.jpg" alt="mucle pic">
+            <img src="images/IMG_0023.jpg" alt="mucle pic">
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer header-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <div class="black-text">
+                    <p>&copy; Grace Nash Fit. All rights reserved.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

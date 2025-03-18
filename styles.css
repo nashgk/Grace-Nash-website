@@ -1,0 +1,229 @@
+/* ========== Color Palette ========== */
+:root {
+    --light-background: #fff0f5; /* #fff0f5 = (255, 240, 245) */
+    --light-pink: #ffc0cb; /* #ffc0cb = (255, 192, 203) */
+    --medium-pink: #d8bfd8; /* #d8bfd8 = (216, 191, 216) */
+    --pink-accent: #ff69b4; /* #ff69b4 = (255, 105, 180) */
+    --text-color: #2d2d2d; /* Darker text color for contrast */
+    /* Darker color for headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #c2227e;  /* Dark pink for a subtle but noticeable dark color */
+}
+
+}
+
+/* ========== General Styles ========== */
+body {
+    background-color: var(--light-background);
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, var(--light-pink) 30%, var(--light-background) 70%);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* Add a slight zoom effect on hover for the whole body */
+body:hover {
+    transform: scale(1.02);
+}
+
+/* ========== Headers ========== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--medium-pink);
+    margin-bottom: 15px;
+    transition: color 0.4s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    font-size: 2.5em;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+h3 {
+    font-size: 2.2em;
+    animation: fadeInUp 1.4s ease-in-out;
+}
+
+h4, h5, h6 {
+    font-size: 1.6em;
+    animation: fadeInUp 1.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== Paragraphs ========== */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: var(--pink-accent);
+}
+
+/* ========== Navigation Bar ========== */
+nav {
+    background: linear-gradient(90deg, var(--pink-accent), var(--light-pink));
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+nav:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: var(--light-background);
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--medium-pink);
+    transform: translateY(-5px);
+}
+
+/* ========== Footer ========== */
+footer {
+    background-color: var(--medium-pink);
+    color: var(--light-background);
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+footer:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== Buttons ========== */
+button {
+    background: var(--pink-accent);
+    color: var(--light-background);
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--light-pink);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Sections ========== */
+section {
+    padding: 40px;
+    margin: 50px auto;
+    background: var(--light-pink);
+    border-radius: 12px;
+    max-width: 1100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== Tables ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--light-background);
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+table:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+    background-color: var(--medium-pink);
+    color: var(--light-background);
+}
+
+td, th {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 2px solid var(--light-pink);
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+td:hover, th:hover {
+    background-color: var(--pink-accent);
+}
+
+tr:hover {
+    background-color: var(--light-pink);
+}
+
+/* ========== Image Gallery Styling ========== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    transition: grid-template-columns 0.5s ease;
+}
+
+.gallery:hover {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
